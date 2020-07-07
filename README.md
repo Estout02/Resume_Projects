@@ -1,9 +1,8 @@
 # Eric Stout Resume Repo
 > This repo is designed to be an easy way to share the code for the projects that I reference on my resume.
 These are all projects that I have done during the course of my Masters of Software Development graduate program.
-The code in these projects, as it stands right now, has not been documented or even commented in a way that 
-will make it easy for those unfamillar with these projects to jump right in. It is instead provided as a 
-candid look at some of my finished projects. The Asteroids project 
+The code is provided as a candid look at some of my finished projects to give an idea of my current skill and 
+some growth that I have made from project to project.
 
 ## Meta
 
