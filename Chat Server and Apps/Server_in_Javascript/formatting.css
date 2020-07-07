@@ -1,0 +1,35 @@
+p{ 
+   color: black;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+h1{ 
+text-align: center;
+border: 1px solid black;
+}
+img { ;
+      max-width: 60%;
+      height: auto;
+      padding:1px;
+      border:1px solid #021a40;
+}
+.center { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body{
+       background-color: LightCyan;
+       border: 2px solid black;
+      max-width: 1200px; 
+}
+h2{ 
+text-align: center;
+font-style: oblique;
+}
+ul{ 
+    text-align: center;
+    list-style-position: inside;
+ }

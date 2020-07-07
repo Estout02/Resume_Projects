@@ -1,0 +1,162 @@
+\hypertarget{class_let_expr}{}\doxysection{Let\+Expr Class Reference}
+\label{class_let_expr}\index{LetExpr@{LetExpr}}
+
+
+{\ttfamily \#include $<$expr.\+hpp$>$}
+
+Inheritance diagram for Let\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_let_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) rhs
+\item 
+\mbox{\hyperlink{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) body
+\item 
+\mbox{\Hypertarget{class_let_expr_a04d9179858babd57b1707fc828afa7c1}\label{class_let_expr_a04d9179858babd57b1707fc828afa7c1}} 
+{\bfseries Let\+Expr} (std\+::string variable, \mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) rhs, \mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) body)
+\item 
+bool \mbox{\hyperlink{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}{equals}} (\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)
+\item 
+\mbox{\hyperlink{class_let_expr_a1004fc0e9cedb59c8d3e5b03f4022c4b}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+\mbox{\hyperlink{class_let_expr_a405df337f2a7b9fa828058a6c43e60a2}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()
+\item 
+std\+::string \mbox{\hyperlink{class_let_expr_aa2d7f51affb28e06c47300c9a576fbf3}{to\+String}} ()
+\item 
+void \mbox{\hyperlink{class_let_expr_a2f3a80250d8d1810718f18bd4f2e33b1}{step\+\_\+interp}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_let_expr_a298791b4d233633bc3d00d8a10b022c0}\label{class_let_expr_a298791b4d233633bc3d00d8a10b022c0}} 
+std\+::string {\bfseries variable}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_let_expr}{Let\+Expr}} defines the use of Let Expressions. example \+\_\+let x = 4 \+\_\+in x + 2 Member variables\+: \+\_\+let x, x is the name rhs is the 4 body is x + 2
+
+Note$\ast$ inherits all virtual methods from Class \mbox{\hyperlink{class_expr}{Expr}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}\label{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}} 
+\index{LetExpr@{LetExpr}!equals@{equals}}
+\index{equals@{equals}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Let\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}\label{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}} 
+\index{LetExpr@{LetExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Let\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a405df337f2a7b9fa828058a6c43e60a2}\label{class_let_expr_a405df337f2a7b9fa828058a6c43e60a2}} 
+\index{LetExpr@{LetExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Let\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}\label{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}} 
+\index{LetExpr@{LetExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Let\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a1004fc0e9cedb59c8d3e5b03f4022c4b}\label{class_let_expr_a1004fc0e9cedb59c8d3e5b03f4022c4b}} 
+\index{LetExpr@{LetExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Let\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a2f3a80250d8d1810718f18bd4f2e33b1}\label{class_let_expr_a2f3a80250d8d1810718f18bd4f2e33b1}} 
+\index{LetExpr@{LetExpr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily void Let\+Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implements \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_aa2d7f51affb28e06c47300c9a576fbf3}\label{class_let_expr_aa2d7f51affb28e06c47300c9a576fbf3}} 
+\index{LetExpr@{LetExpr}!toString@{toString}}
+\index{toString@{toString}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Let\+Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+cpp\end{DoxyCompactItemize}

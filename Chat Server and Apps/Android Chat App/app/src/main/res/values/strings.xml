@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="edit_message">Enter Username</string>
+    <string name="button_send">Connect to Chat</string>
+    <string name="enter_chatroom_name">Enter Chatroom Name</string>
+    <string name="connect">Connect</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="button">Button</string>
+    <string name="enter_username">Enter Username</string>
+</resources>

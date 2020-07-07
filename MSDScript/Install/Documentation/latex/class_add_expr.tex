@@ -1,0 +1,156 @@
+\hypertarget{class_add_expr}{}\doxysection{Add\+Expr Class Reference}
+\label{class_add_expr}\index{AddExpr@{AddExpr}}
+
+
+{\ttfamily \#include $<$expr.\+hpp$>$}
+
+Inheritance diagram for Add\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) lhs
+\item 
+\mbox{\hyperlink{class_add_expr_a46af24c80b91f9a28fee02604530f053}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) rhs
+\item 
+\mbox{\Hypertarget{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}\label{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}} 
+{\bfseries Add\+Expr} (\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) lhs, \mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) rhs)
+\item 
+bool \mbox{\hyperlink{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}{equals}} (\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)
+\item 
+\mbox{\hyperlink{class_add_expr_a4a1eb99679e2fe5f1f6e2a7d77761b8a}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()
+\item 
+std\+::string \mbox{\hyperlink{class_add_expr_a716f78106f8a98817be3a3a6f450c8ab}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_add_expr_a8c10df147142092525cab84763e8ba58}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_add_expr_ae68ce989eeb8b543d016586bd1b798e6}{step\+\_\+interp}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_add_expr}{Add\+Expr}} Class defines the adding of two exprs.
+
+Note$\ast$ inherits all virtual methods from Class \mbox{\hyperlink{class_expr}{Expr}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}\label{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}} 
+\index{AddExpr@{AddExpr}!equals@{equals}}
+\index{equals@{equals}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Add\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}\label{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}} 
+\index{AddExpr@{AddExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Add\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_a4a1eb99679e2fe5f1f6e2a7d77761b8a}\label{class_add_expr_a4a1eb99679e2fe5f1f6e2a7d77761b8a}} 
+\index{AddExpr@{AddExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Add\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_a46af24c80b91f9a28fee02604530f053}\label{class_add_expr_a46af24c80b91f9a28fee02604530f053}} 
+\index{AddExpr@{AddExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Add\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_a8c10df147142092525cab84763e8ba58}\label{class_add_expr_a8c10df147142092525cab84763e8ba58}} 
+\index{AddExpr@{AddExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Add\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_ae68ce989eeb8b543d016586bd1b798e6}\label{class_add_expr_ae68ce989eeb8b543d016586bd1b798e6}} 
+\index{AddExpr@{AddExpr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily void Add\+Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implements \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{Expr}}.
+
+\mbox{\Hypertarget{class_add_expr_a716f78106f8a98817be3a3a6f450c8ab}\label{class_add_expr_a716f78106f8a98817be3a3a6f450c8ab}} 
+\index{AddExpr@{AddExpr}!toString@{toString}}
+\index{toString@{toString}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Add\+Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+cpp\end{DoxyCompactItemize}

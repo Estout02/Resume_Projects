@@ -1,0 +1,156 @@
+\hypertarget{class_mult_expr}{}\doxysection{Mult\+Expr Class Reference}
+\label{class_mult_expr}\index{MultExpr@{MultExpr}}
+
+
+{\ttfamily \#include $<$expr.\+hpp$>$}
+
+Inheritance diagram for Mult\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mult_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) lhs
+\item 
+\mbox{\hyperlink{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) rhs
+\item 
+\mbox{\Hypertarget{class_mult_expr_a42dee92b694e43d0ed69942d5da3b66b}\label{class_mult_expr_a42dee92b694e43d0ed69942d5da3b66b}} 
+{\bfseries Mult\+Expr} (\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) lhs, \mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) rhs)
+\item 
+bool \mbox{\hyperlink{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}{equals}} (\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)
+\item 
+\mbox{\hyperlink{class_mult_expr_aab34cc94ad9b6709bfa5e2c462f5e05e}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+\mbox{\hyperlink{class_mult_expr_a77e88081ac1e3ac5be14a9b22e762081}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()
+\item 
+std\+::string \mbox{\hyperlink{class_mult_expr_a6681b536522ef0abcd030b80da79e468}{to\+String}} ()
+\item 
+void \mbox{\hyperlink{class_mult_expr_a886441ed30de81c8872a8d8db1620fa3}{step\+\_\+interp}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} Class defines the Multiplying of two exprs. Member variables are the left hand side expression and the right hand side expressions to be multiplied.
+
+Note$\ast$ inherits all virtual methods from Class \mbox{\hyperlink{class_expr}{Expr}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}\label{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}} 
+\index{MultExpr@{MultExpr}!equals@{equals}}
+\index{equals@{equals}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Mult\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}\label{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}} 
+\index{MultExpr@{MultExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Mult\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_a77e88081ac1e3ac5be14a9b22e762081}\label{class_mult_expr_a77e88081ac1e3ac5be14a9b22e762081}} 
+\index{MultExpr@{MultExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Mult\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}\label{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}} 
+\index{MultExpr@{MultExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Mult\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_aab34cc94ad9b6709bfa5e2c462f5e05e}\label{class_mult_expr_aab34cc94ad9b6709bfa5e2c462f5e05e}} 
+\index{MultExpr@{MultExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Mult\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_a886441ed30de81c8872a8d8db1620fa3}\label{class_mult_expr_a886441ed30de81c8872a8d8db1620fa3}} 
+\index{MultExpr@{MultExpr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily void Mult\+Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implements \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{Expr}}.
+
+\mbox{\Hypertarget{class_mult_expr_a6681b536522ef0abcd030b80da79e468}\label{class_mult_expr_a6681b536522ef0abcd030b80da79e468}} 
+\index{MultExpr@{MultExpr}!toString@{toString}}
+\index{toString@{toString}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Mult\+Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+cpp\end{DoxyCompactItemize}

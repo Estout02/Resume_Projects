@@ -1,0 +1,180 @@
+\hypertarget{class_val}{}\doxysection{Val Class Reference}
+\label{class_val}\index{Val@{Val}}
+Inheritance diagram for Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_val}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_val_a32df13d9880fa6e5982a28a1762ba8d3}{equals}} (\mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_val}{Val}}) val)=0
+\item 
+virtual \mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) add\+\_\+to(P\+TR(\mbox{\hyperlink{class_val}{Val}}) other\+\_\+val)=0
+\item 
+virtual \mbox{\hyperlink{class_val_a719205cf10a729d7ab963462340fadb1}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) mult\+\_\+with(P\+TR(\mbox{\hyperlink{class_val}{Val}}) other\+\_\+val)=0
+\item 
+virtual \mbox{\hyperlink{class_val_ac8e6797b0074c98cbfc9b625eb82c553}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) to\+\_\+expr()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_val_ab1dac5c2a6656bd674eb464dd9d203b1}{to\+\_\+string}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{is\+\_\+true}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_val_a22a63e27a8124e7fbb93b845d1080bf2}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) call(P\+TR(\mbox{\hyperlink{class_val}{Val}}) actual\+\_\+arg)=0
+\item 
+virtual void \mbox{\hyperlink{class_val_abd57a88228b54401f6ddedfde917dcbd}{call\+\_\+step}} (\mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_val}{Val}}) actual\+\_\+arg\+\_\+val, \mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_cont}{Cont}}) rest)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_val_abd57a88228b54401f6ddedfde917dcbd}\label{class_val_abd57a88228b54401f6ddedfde917dcbd}} 
+\index{Val@{Val}!call\_step@{call\_step}}
+\index{call\_step@{call\_step}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{call\_step()}{call\_step()}}
+{\footnotesize\ttfamily virtual void Val\+::call\+\_\+step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_val}{Val}})}]{actual\+\_\+arg\+\_\+val,  }\item[{\mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_cont}{Cont}})}]{rest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attemps to call a function, using step mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a86e71c63809a07e0922486a4f8694ac1}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a1944dfb52a964f6b03a46a10e9a7732d}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_ad4d26e5cd9c3fc6c2460604430ce7d6e}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_a32df13d9880fa6e5982a28a1762ba8d3}\label{class_val_a32df13d9880fa6e5982a28a1762ba8d3}} 
+\index{Val@{Val}!equals@{equals}}
+\index{equals@{equals}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily virtual bool Val\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val_aea839c91b20a05a0cdf290718be77e49}{P\+TR}}(\mbox{\hyperlink{class_val}{Val}})}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Checks if vals of expressions are equal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_ab0ae3dff5c5e842ffdb8444a7ec361f2}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a41c974e4d8368e0fb486228bf5cca712}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a5a3a94ac6c807f426d64534ab182a53f}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_ad10185dc7531f869c7197ba89479ff95}\label{class_val_ad10185dc7531f869c7197ba89479ff95}} 
+\index{Val@{Val}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily virtual bool Val\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to return the bool of a value.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a32533f0035605ba686221dd3495a0972}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a9cef4c38ee032838acefa7d3621040fb}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a9199754dc1452403aa10b305f455c3f7}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_ac8e6797b0074c98cbfc9b625eb82c553}\label{class_val_ac8e6797b0074c98cbfc9b625eb82c553}} 
+\index{Val@{Val}!PTR@{PTR}}
+\index{PTR@{PTR}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily virtual Val\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns an expr from the given val.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a558f4accf349018737f94f2b2acf9792}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a0fcd2c1763c6298982acfb61364bf11f}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_ad626cfa551c9af5d213a4785dbf463f1}{Num\+Val}}, and \mbox{\hyperlink{class_fun_val_a94eb1fb57ac876f8b36315606bd1d108}{Fun\+Val}}.
+
+\mbox{\Hypertarget{class_val_aea839c91b20a05a0cdf290718be77e49}\label{class_val_aea839c91b20a05a0cdf290718be77e49}} 
+\index{Val@{Val}!PTR@{PTR}}
+\index{PTR@{PTR}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily virtual Val\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to add two Vals
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a0c05a564fad77137155d5230b0501185}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a8b352cfafb385a2f486bc519f95ecc07}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a130cc853cd4f89ede1dbffc27509a198}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a325bfbb7fea95cfd459fa41ba7da4016}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a1cc989ad4c0f9836ce70afa44939ca59}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a0a79a59b2b00d97d11aa2e661c2941c3}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a0889d28beda8c7d33e1d1931a42ae394}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_ab979f1207f0b08d4ea44f9a7044ad1be}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a0780507c81e011830071f48a26dd905e}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_a22a63e27a8124e7fbb93b845d1080bf2}\label{class_val_a22a63e27a8124e7fbb93b845d1080bf2}} 
+\index{Val@{Val}!PTR@{PTR}}
+\index{PTR@{PTR}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily virtual Val\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attemps to call a function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a0c05a564fad77137155d5230b0501185}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a8b352cfafb385a2f486bc519f95ecc07}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a130cc853cd4f89ede1dbffc27509a198}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a325bfbb7fea95cfd459fa41ba7da4016}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a1cc989ad4c0f9836ce70afa44939ca59}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a0a79a59b2b00d97d11aa2e661c2941c3}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a0889d28beda8c7d33e1d1931a42ae394}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_ab979f1207f0b08d4ea44f9a7044ad1be}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a0780507c81e011830071f48a26dd905e}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_a719205cf10a729d7ab963462340fadb1}\label{class_val_a719205cf10a729d7ab963462340fadb1}} 
+\index{Val@{Val}!PTR@{PTR}}
+\index{PTR@{PTR}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily virtual Val\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to multiply two vals
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_a0c05a564fad77137155d5230b0501185}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a8b352cfafb385a2f486bc519f95ecc07}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a130cc853cd4f89ede1dbffc27509a198}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a325bfbb7fea95cfd459fa41ba7da4016}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_a1cc989ad4c0f9836ce70afa44939ca59}{Bool\+Val}}, \mbox{\hyperlink{class_num_val_a0a79a59b2b00d97d11aa2e661c2941c3}{Num\+Val}}, \mbox{\hyperlink{class_fun_val_a0889d28beda8c7d33e1d1931a42ae394}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_ab979f1207f0b08d4ea44f9a7044ad1be}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a0780507c81e011830071f48a26dd905e}{Num\+Val}}.
+
+\mbox{\Hypertarget{class_val_ab1dac5c2a6656bd674eb464dd9d203b1}\label{class_val_ab1dac5c2a6656bd674eb464dd9d203b1}} 
+\index{Val@{Val}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Val@{Val}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily virtual std\+::string Val\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a string representation of the val it is called on.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_fun_val_aca217e9b3906bd49b73e267a6a386af1}{Fun\+Val}}, \mbox{\hyperlink{class_bool_val_ad71e4fd865e15fcca84208989c5a5495}{Bool\+Val}}, and \mbox{\hyperlink{class_num_val_a5d5d730fd48371a303e0fed9c33b1a3e}{Num\+Val}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/value.\+hpp\end{DoxyCompactItemize}

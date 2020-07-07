@@ -1,0 +1,128 @@
+\hypertarget{class_var_expr}{}\doxysection{Var\+Expr Class Reference}
+\label{class_var_expr}\index{VarExpr@{VarExpr}}
+
+
+{\ttfamily \#include $<$expr.\+hpp$>$}
+
+Inheritance diagram for Var\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_var_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_var_expr_ae1014ca1f87a0cb90d0b7e739308ac72}\label{class_var_expr_ae1014ca1f87a0cb90d0b7e739308ac72}} 
+{\bfseries Var\+Expr} (std\+::string name)
+\item 
+bool \mbox{\hyperlink{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}{equals}} (\mbox{\hyperlink{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)
+\item 
+\mbox{\hyperlink{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+\mbox{\hyperlink{class_var_expr_ac67203429fa7ed6a6fcbdc860bf7ca74}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()
+\item 
+std\+::string \mbox{\hyperlink{class_var_expr_a438839126252cb94ae9665548049fe42}{to\+String}} ()
+\item 
+void \mbox{\hyperlink{class_var_expr_aeea7df36e0a114e60f3300d6662e8d7f}{step\+\_\+interp}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_var_expr_ac068502bbc20416487dc50568d68818c}\label{class_var_expr_ac068502bbc20416487dc50568d68818c}} 
+std\+::string {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_var_expr}{Var\+Expr}} defines the use of variables. Member variable of string name is variable name.
+
+Note$\ast$ inherits all virtual methods from Class \mbox{\hyperlink{class_expr}{Expr}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}\label{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}} 
+\index{VarExpr@{VarExpr}!equals@{equals}}
+\index{equals@{equals}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Var\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_ac67203429fa7ed6a6fcbdc860bf7ca74}\label{class_var_expr_ac67203429fa7ed6a6fcbdc860bf7ca74}} 
+\index{VarExpr@{VarExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Var\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}\label{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}} 
+\index{VarExpr@{VarExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Var\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_aeea7df36e0a114e60f3300d6662e8d7f}\label{class_var_expr_aeea7df36e0a114e60f3300d6662e8d7f}} 
+\index{VarExpr@{VarExpr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily void Var\+Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implements \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_a438839126252cb94ae9665548049fe42}\label{class_var_expr_a438839126252cb94ae9665548049fe42}} 
+\index{VarExpr@{VarExpr}!toString@{toString}}
+\index{toString@{toString}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Var\+Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+cpp\end{DoxyCompactItemize}

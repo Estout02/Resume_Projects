@@ -1,0 +1,156 @@
+\hypertarget{class_call_expr}{}\doxysection{Call\+Expr Class Reference}
+\label{class_call_expr}\index{CallExpr@{CallExpr}}
+
+
+{\ttfamily \#include $<$expr.\+hpp$>$}
+
+Inheritance diagram for Call\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_call_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_call_expr_a2e6d22b7dec5a8fa6b4bd5ea88f394f5}\label{class_call_expr_a2e6d22b7dec5a8fa6b4bd5ea88f394f5}} 
+{\bfseries Call\+Expr} (\mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) to\+\_\+be\+\_\+called, \mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) actual\+\_\+arg)
+\item 
+\mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) to\+\_\+be\+\_\+called
+\item 
+\mbox{\hyperlink{class_call_expr_a3416ead3481d66cb749efa6d32584c13}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) actual\+\_\+arg
+\item 
+bool \mbox{\hyperlink{class_call_expr_a6ec7d6b0a1bf0687d28ecec8c6ed5ffd}{equals}} (\mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)
+\item 
+\mbox{\hyperlink{class_call_expr_afc0e06b33799b18171201ca6bb870a49}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+\mbox{\hyperlink{class_call_expr_af006607f09029561b47d8f5250182a70}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()
+\item 
+std\+::string \mbox{\hyperlink{class_call_expr_aa1efd4e3e1cd1eaf891535ffe28874d0}{to\+String}} ()
+\item 
+void \mbox{\hyperlink{class_call_expr_a2faa303868b35ab33c47d488ce2033c5}{step\+\_\+interp}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines all call Expressions ex. \+\_\+let f = \+\_\+fun (x) x + 10 \+\_\+in f (5) Member Variables\+: to\+\_\+be\+\_\+called = function name (f) actual\+\_\+arg = (5) this is the value fed into the function
+
+Note$\ast$ inherits all virtual methods from Class \mbox{\hyperlink{class_expr}{Expr}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_call_expr_a6ec7d6b0a1bf0687d28ecec8c6ed5ffd}\label{class_call_expr_a6ec7d6b0a1bf0687d28ecec8c6ed5ffd}} 
+\index{CallExpr@{CallExpr}!equals@{equals}}
+\index{equals@{equals}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Call\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_a3416ead3481d66cb749efa6d32584c13}\label{class_call_expr_a3416ead3481d66cb749efa6d32584c13}} 
+\index{CallExpr@{CallExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Call\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_af006607f09029561b47d8f5250182a70}\label{class_call_expr_af006607f09029561b47d8f5250182a70}} 
+\index{CallExpr@{CallExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Call\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}\label{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}} 
+\index{CallExpr@{CallExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Call\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_afc0e06b33799b18171201ca6bb870a49}\label{class_call_expr_afc0e06b33799b18171201ca6bb870a49}} 
+\index{CallExpr@{CallExpr}!PTR@{PTR}}
+\index{PTR@{PTR}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Call\+Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_a2faa303868b35ab33c47d488ce2033c5}\label{class_call_expr_a2faa303868b35ab33c47d488ce2033c5}} 
+\index{CallExpr@{CallExpr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily void Call\+Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implements \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{Expr}}.
+
+\mbox{\Hypertarget{class_call_expr_aa1efd4e3e1cd1eaf891535ffe28874d0}\label{class_call_expr_aa1efd4e3e1cd1eaf891535ffe28874d0}} 
+\index{CallExpr@{CallExpr}!toString@{toString}}
+\index{toString@{toString}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Call\+Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+cpp\end{DoxyCompactItemize}

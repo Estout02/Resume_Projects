@@ -1,0 +1,109 @@
+\hypertarget{class_expr}{}\doxysection{Expr Class Reference}
+\label{class_expr}\index{Expr@{Expr}}
+Inheritance diagram for Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a6cbb8231902d1fdd42a3627b897de69e}{equals}} (\mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}}) e)=0
+\item 
+virtual \mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{P\+TR}} (\mbox{\hyperlink{class_val}{Val}}) interp(P\+TR(\mbox{\hyperlink{class_env}{Env}}) env)=0
+\item 
+virtual \mbox{\hyperlink{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}{P\+TR}} (\mbox{\hyperlink{class_expr}{Expr}}) optimize()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_expr_a2ef53e39ac85c057685f8b4049432f30}{to\+String}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_expr_a51f5c5358e8569a181c43bf404931d47}{step\+\_\+interp}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_expr_a6cbb8231902d1fdd42a3627b897de69e}\label{class_expr_a6cbb8231902d1fdd42a3627b897de69e}} 
+\index{Expr@{Expr}!equals@{equals}}
+\index{equals@{equals}!Expr@{Expr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily virtual bool Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr_ab1b7c8fd4080259fa895a1be65342a53}{P\+TR}}(\mbox{\hyperlink{class_expr}{Expr}})}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets up expressions so that they can be compared using boolean expressions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & an \mbox{\hyperlink{class_expr}{Expr}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_call_expr_a6ec7d6b0a1bf0687d28ecec8c6ed5ffd}{Call\+Expr}}, \mbox{\hyperlink{class_fun_expr_a6f7ccdd163970b085de6f0cd1bb6fd44}{Fun\+Expr}}, \mbox{\hyperlink{class_equals_expr_aad9f38d88f23940ea8917c7b42daa2a1}{Equals\+Expr}}, \mbox{\hyperlink{class_if_expr_a917efe4283274aa5d2fbbd43d67f3168}{If\+Expr}}, \mbox{\hyperlink{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}{Bool\+Expr}}, \mbox{\hyperlink{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}{Let\+Expr}}, \mbox{\hyperlink{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}{Var\+Expr}}, \mbox{\hyperlink{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}{Add\+Expr}}, and \mbox{\hyperlink{class_num_expr_ace5b24147c4a9cfbcf6010f1ad3a13b0}{Num\+Expr}}.
+
+\mbox{\Hypertarget{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}\label{class_expr_a4fc18b8b13d15f71bd20bf01d6b6d8c4}} 
+\index{Expr@{Expr}!PTR@{PTR}}
+\index{PTR@{PTR}!Expr@{Expr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to optimize the expression. Returns either an equivalent expression or an optimized one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_expr}{Expr}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_call_expr_a61006f24ea2b96d6c67829dea3efd7f8}{Call\+Expr}}, \mbox{\hyperlink{class_equals_expr_a17828b103ab57a7841430502e8fc486e}{Equals\+Expr}}, \mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{Let\+Expr}}, \mbox{\hyperlink{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_a46af24c80b91f9a28fee02604530f053}{Add\+Expr}}, \mbox{\hyperlink{class_call_expr_af006607f09029561b47d8f5250182a70}{Call\+Expr}}, \mbox{\hyperlink{class_fun_expr_aa038fa0ddcec3ebce74acd05f45ae5ab}{Fun\+Expr}}, \mbox{\hyperlink{class_equals_expr_aa51c51e4d34dc0af74e11018c4ccbbd4}{Equals\+Expr}}, \mbox{\hyperlink{class_if_expr_abd69dc4a433965b17b409272e4064eff}{If\+Expr}}, \mbox{\hyperlink{class_bool_expr_acedafa21fbe0c23478b159841114e250}{Bool\+Expr}}, \mbox{\hyperlink{class_let_expr_a405df337f2a7b9fa828058a6c43e60a2}{Let\+Expr}}, \mbox{\hyperlink{class_var_expr_ac67203429fa7ed6a6fcbdc860bf7ca74}{Var\+Expr}}, \mbox{\hyperlink{class_mult_expr_a77e88081ac1e3ac5be14a9b22e762081}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_a4a1eb99679e2fe5f1f6e2a7d77761b8a}{Add\+Expr}}, \mbox{\hyperlink{class_num_expr_a6bc2dd0677cdc4b505dd51b40496abe6}{Num\+Expr}}, \mbox{\hyperlink{class_equals_expr_a3a679e56982919b35b88c18ebd0bd270}{Equals\+Expr}}, \mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{Add\+Expr}}, \mbox{\hyperlink{class_if_expr_a1536cd9f30ba4e79337dd6d38ac1e5aa}{If\+Expr}}, \mbox{\hyperlink{class_if_expr_ad0e8b28a56d662a65ec88fe1c70286f7}{If\+Expr}}, \mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{If\+Expr}}, \mbox{\hyperlink{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}{Fun\+Expr}}, \mbox{\hyperlink{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}{Let\+Expr}}, and \mbox{\hyperlink{class_call_expr_a3416ead3481d66cb749efa6d32584c13}{Call\+Expr}}.
+
+\mbox{\Hypertarget{class_expr_ab1b7c8fd4080259fa895a1be65342a53}\label{class_expr_ab1b7c8fd4080259fa895a1be65342a53}} 
+\index{Expr@{Expr}!PTR@{PTR}}
+\index{PTR@{PTR}!Expr@{Expr}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual Expr\+::\+P\+TR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Calls interpret on an environment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_num_expr_a014c896703655d43fb1a050de952f35f}{Num\+Expr}}, \mbox{\hyperlink{class_call_expr_afc0e06b33799b18171201ca6bb870a49}{Call\+Expr}}, \mbox{\hyperlink{class_fun_expr_a29f778d31dce73ad13c31842e85f2667}{Fun\+Expr}}, \mbox{\hyperlink{class_equals_expr_af9cae13b8ce65fb8cf674509c32b8ea7}{Equals\+Expr}}, \mbox{\hyperlink{class_if_expr_a31891f7cc25254f0c38a9044b6432c5d}{If\+Expr}}, \mbox{\hyperlink{class_bool_expr_a4d413927def34927dcfcaa7a826de546}{Bool\+Expr}}, \mbox{\hyperlink{class_let_expr_a1004fc0e9cedb59c8d3e5b03f4022c4b}{Let\+Expr}}, \mbox{\hyperlink{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}{Var\+Expr}}, \mbox{\hyperlink{class_mult_expr_aab34cc94ad9b6709bfa5e2c462f5e05e}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_a8c10df147142092525cab84763e8ba58}{Add\+Expr}}, and \mbox{\hyperlink{class_num_expr_a7d7b6729f32eac9efacba4869e14f1e8}{Num\+Expr}}.
+
+\mbox{\Hypertarget{class_expr_a51f5c5358e8569a181c43bf404931d47}\label{class_expr_a51f5c5358e8569a181c43bf404931d47}} 
+\index{Expr@{Expr}!step\_interp@{step\_interp}}
+\index{step\_interp@{step\_interp}!Expr@{Expr}}
+\doxysubsubsection{\texorpdfstring{step\_interp()}{step\_interp()}}
+{\footnotesize\ttfamily virtual void Expr\+::step\+\_\+interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Interp that doesn\textquotesingle{}t remember all of the variables, passes what it needs so that there is no stack overflow for input that would take up a lot of stack space, for example a recursive function that counts down from 100. 
+
+Implemented in \mbox{\hyperlink{class_call_expr_a2faa303868b35ab33c47d488ce2033c5}{Call\+Expr}}, \mbox{\hyperlink{class_fun_expr_adf441c8f666c5477f6e7e4446ef0b035}{Fun\+Expr}}, \mbox{\hyperlink{class_equals_expr_a5c93c925e6dff28d06fdf05c37598260}{Equals\+Expr}}, \mbox{\hyperlink{class_if_expr_a6fbd3fb73603a500ef6fda93f629469d}{If\+Expr}}, \mbox{\hyperlink{class_bool_expr_a56c1324f1c6f911c34d78af5f0c4943f}{Bool\+Expr}}, \mbox{\hyperlink{class_let_expr_a2f3a80250d8d1810718f18bd4f2e33b1}{Let\+Expr}}, \mbox{\hyperlink{class_var_expr_aeea7df36e0a114e60f3300d6662e8d7f}{Var\+Expr}}, \mbox{\hyperlink{class_mult_expr_a886441ed30de81c8872a8d8db1620fa3}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_ae68ce989eeb8b543d016586bd1b798e6}{Add\+Expr}}, and \mbox{\hyperlink{class_num_expr_a01f69a80eb159d402bbf86cea2402e34}{Num\+Expr}}.
+
+\mbox{\Hypertarget{class_expr_a2ef53e39ac85c057685f8b4049432f30}\label{class_expr_a2ef53e39ac85c057685f8b4049432f30}} 
+\index{Expr@{Expr}!toString@{toString}}
+\index{toString@{toString}!Expr@{Expr}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily virtual std\+::string Expr\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates string representation of expressions.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_call_expr_aa1efd4e3e1cd1eaf891535ffe28874d0}{Call\+Expr}}, \mbox{\hyperlink{class_fun_expr_aeeafcee515d665d8d3509eb46c09f1b8}{Fun\+Expr}}, \mbox{\hyperlink{class_equals_expr_a0d3dc3ae462a6ae99dc20af706a80426}{Equals\+Expr}}, \mbox{\hyperlink{class_if_expr_ad156d742baefb01196a456af40e2a2d2}{If\+Expr}}, \mbox{\hyperlink{class_bool_expr_a0d1d11e0d7fb23141a6cb8d0d423a583}{Bool\+Expr}}, \mbox{\hyperlink{class_let_expr_aa2d7f51affb28e06c47300c9a576fbf3}{Let\+Expr}}, \mbox{\hyperlink{class_var_expr_a438839126252cb94ae9665548049fe42}{Var\+Expr}}, \mbox{\hyperlink{class_mult_expr_a6681b536522ef0abcd030b80da79e468}{Mult\+Expr}}, \mbox{\hyperlink{class_add_expr_a716f78106f8a98817be3a3a6f450c8ab}{Add\+Expr}}, and \mbox{\hyperlink{class_num_expr_a7e85306a455e1926252411b9a2190c66}{Num\+Expr}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ericstout/\+Eric\+Stout/\+C\+S6015/\+Homework/\+M\+S\+Dscript/\+Intrepretor Install/expr.\+hpp\end{DoxyCompactItemize}
