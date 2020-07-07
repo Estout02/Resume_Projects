@@ -1,16 +1,16 @@
 # Eric Stout Resume Repo
-> This repo is designed to be an easy way to share the code for the projects that i reference on my resume.
-Some of the code is in better shape than others and some of the code is commented better than others. I provide
-this code in the hopes that you will see that I have done some worthwhile interesting projects, and not to 
-neccasrily provide 100% bug free, prefectly documented code.
+> This repo is designed to be an easy way to share the code for the projects that I reference on my resume.
+These are all projects that I have done during the course of my Masters of Software Development graduate program.
+The code in these projects, as it stands right now, has not been documented or even commented in a way that 
+will make it easy for those unfamillar with these projects to jump right in. It is instead provided as a 
+candid look at some of my finished projects. The Asteroids project 
 
 ## Meta
 
-Eric Stout – [@LinkedIn](https://www.linkedin.com/in/eric-d-stout) – ericdstout@gmail.com
+Eric Stout – [LinkedIn](https://www.linkedin.com/in/eric-d-stout) – ericdstout@gmail.com
 
-github.io [github.io](https://estout02.github.io/)
+Work in Progress - [github.io](https://estout02.github.io/) 
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 
 <!-- Markdown link & img dfn's -->
